@@ -1,0 +1,266 @@
+/* General */
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #2d6187;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Navbar */
+nav {
+    min-height: 5em;
+}
+
+nav .btn {
+  z-index: 20;
+}
+
+.btn {
+    color: #fff;
+    background-color: #2d6187;
+}
+
+#intro .top-right-gradient {
+    position: absolute;
+    top: -40%;
+    right: -21%;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: linear-gradient(#effad3, #28abb9);
+  }
+
+/* Jumbotron */
+.jumbotron {
+    color: #fff;
+    background-color: #2d6187;
+    height: 93vh;
+}
+
+.jumbotron h1 {
+    font-weight: 700;
+}
+
+.jumbotron img {
+    margin-top: -150px;
+    width: 35em;
+    display: flex;
+    float: right;
+}
+
+/* Portfolio */
+#portfolio {
+    color: #2d6187;
+    /* margin-top: -30px; */
+    background-color: #effad3;
+    height: 100vh;
+}
+
+#portfolio h1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#portfolio .middle-left-gradient {
+    position: absolute;
+    top: 120%;
+    right: 93%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(#a8dda8, #28abb9);
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 10px;
+    background-color: #effad3;
+}
+
+.card-title {
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Education */
+#education {
+    color: #2d6187;
+    /* margin-top: -30px; */
+    background-color: #a8dda8;
+    height: 100vh;
+}
+
+#education h1.display-4 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#education .bottom-right-gradient {
+    position: absolute;
+    top: 250%;
+    right: -20%;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: linear-gradient(#2d6187, #28abb9);
+}
+
+/* Contact */
+#contact {
+    color: #effad3;
+    /* margin-top: -30px; */
+    background-color: #28abb9;
+    height: 100vh;
+}
+
+#contact h1.display-4 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#contact .bottom-left-gradient {
+    position: absolute;
+    bottom: -310%;
+    right: 80%;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(#a8dda8, #28abb9);
+}
+
+#contact .btn {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 10px;
+    color: #effad3;
+    background-color: #2d6187;
+}
+
+/* Utilities */
+.vl {
+    margin-left: 10px;
+    border-left: 2px solid white;
+    height: 500px;
+}
+
+/* Back to Top Button */
+#myButton {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-image: linear-gradient(to right,#a8dda8 0%, #28abb9 100%); /* Set a background color */
+  color: #effad3; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  transition: 0.5s;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+#myButton:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  margin: 2px 4px 6px;
+  background-position: right center; /* Add a dark-grey background on hover */
+}
+
+/* Responsiveness */
+@media (min-width: 320px) and (max-width: 640px) {
+    /* Navbar */
+    nav .btn {
+      background-color: #effad3;
+      color: #2d6187;
+    }
+
+    /* Jumbotron */
+    .jumbotron {
+        height: 120vh;
+    }
+
+    .jumbotron img {
+        margin-top: 30px;
+        width: 450px;
+    }
+
+    #intro .top-right-gradient {
+        position: absolute;
+        top: -20%;
+        right: -21%;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background: linear-gradient(#effad3, #28abb9);
+    }
+
+    /* Portfolio */
+    #portfolio {
+        height: 160vh;
+    }
+
+    #portfolio .middle-left-gradient {
+        position: absolute;
+        top: 170%;
+        right: 85%;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: linear-gradient(#a8dda8, #28abb9);
+    }
+
+    /* Education */
+    #education {
+      height: 120vh;
+    }
+
+    #education .bottom-right-gradient {
+      position: absolute;
+      top: 340%;
+      right: -15%;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: linear-gradient(#2d6187, #28abb9);
+    }
+
+    /* Contact */
+    #contact {
+      height: 120vh;
+    }
+
+    #contact .vl {
+      display: none;
+    }
+
+    #contact .bottom-left-gradient {
+      position: absolute;
+      bottom: -430%;
+      right: 90%;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: linear-gradient(#a8dda8, #28abb9);
+    }
+
+    #contact .btn {
+      margin-bottom: 30px;
+    }
+
+    /* Back to Top Button */
+    #myButton {
+      font-size: 18px;
+      right: 10px;
+    }
+}
