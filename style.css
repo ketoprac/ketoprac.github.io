@@ -56,7 +56,11 @@ nav .btn {
     color: #2d6187;
     /* margin-top: -30px; */
     background-color: #effad3;
-    height: 100vh;
+}
+
+#portfolio .row {
+  display: flex;
+  justify-content: space-between;
 }
 
 #portfolio h1 {
@@ -74,7 +78,21 @@ nav .btn {
     background: linear-gradient(#a8dda8, #28abb9);
 }
 
+.card img {
+    border-radius: 20px;
+    transition: 0.5s ease;
+}
+
+.card img:hover {
+    transform: scale(1.2);
+}
+
+.card .img-zoom {
+    overflow: hidden;
+}
+
 .card {
+    border: none;
     width: 400px;
     margin: 0 auto;
     float: none;
@@ -93,6 +111,10 @@ nav .btn {
     /* margin-top: -30px; */
     background-color: #a8dda8;
     height: 100vh;
+}
+
+#education .row {
+  display: flex;
 }
 
 #education h1.display-4 {
@@ -125,7 +147,7 @@ nav .btn {
 
 #contact .bottom-left-gradient {
     position: absolute;
-    bottom: -310%;
+    bottom: -295%;
     right: 80%;
     width: 300px;
     height: 300px;
@@ -205,11 +227,6 @@ nav .btn {
         background: linear-gradient(#effad3, #28abb9);
     }
 
-    /* Portfolio */
-    #portfolio {
-        height: 160vh;
-    }
-
     #portfolio .middle-left-gradient {
         position: absolute;
         top: 170%;
@@ -221,18 +238,26 @@ nav .btn {
     }
 
     /* Education */
-    #education {
+    /* #education {
       height: 120vh;
-    }
+    } */
 
     #education .bottom-right-gradient {
       position: absolute;
-      top: 340%;
+      top: 380%;
       right: -15%;
       width: 150px;
       height: 150px;
       border-radius: 50%;
       background: linear-gradient(#2d6187, #28abb9);
+    }
+
+    #education h1.edu {
+      font-size: 2rem;
+    }
+
+    #education h2 {
+      font-size: 1.5rem;
     }
 
     /* Contact */
