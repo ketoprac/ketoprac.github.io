@@ -1,228 +1,408 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- My CSS -->
-  <link rel="stylesheet" href="style.css">
+    <!-- Lightbox CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+      integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ=="
+      crossorigin="anonymous"
+    />
 
-  <!-- Lightbox CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
-    integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ=="
-    crossorigin="anonymous" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-    crossorigin="anonymous" />
+    <!-- Animation on Scroll CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-  <!-- Animation on Scroll CSS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- My Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- My Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap" rel="stylesheet">
+    <title>Hafiedz Mada Matsushita</title>
+  </head>
 
-  <title>Hafiedz Mada Matsushita</title>
-</head>
+  <body>
+    <!-- Back to Top Button -->
+    <button onclick="topFunction()" id="myButton" title="Go to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
 
-<body>
-  <!-- Back to Top Button -->
-  <button onclick="topFunction()" id="myButton" title="Go to top"><i class="fas fa-arrow-up"></i></button>
-
-  <!-- Navbar -->
-  <section id="intro">
-    <div class="top-right-gradient"></div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-      <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link active" href="#portfolio">Portfolio</a>
-            <a class="nav-link active" href="#education">Education</a>
-          </div>
-          <div class="navbar-nav ml-auto">
-            <a href="#contact"><button type="button" class="btn">Contact</button></a>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Jumbotron -->
-
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <p class="lead">Hello, i am</p>
-        <h1 class="display-5">Hafiedz Mada Matsushita</h1>
-        <p class="lead">A sophomore college student who has interest and<br>currently learning Front End Website
-          Developing.
-        </p>
-        <img src="img/programmer.png" alt="Programmer">
-      </div>
-    </div>
-  </section>
-
-  <!-- Portfolio -->
-  <section id="portfolio">
-    <div class="middle-left-gradient"></div>
-    <div class="container pb-5">
-      <div class="row">
-        <div class="col">
-          <h1 class="display-4 text-center" data-aos="fade-up" data-aos-duration="1500">Portfolio</h1>
-          <div class="row content-portfolio justify-content-center">
-            <div class="col-lg-6">
-              <div class="card" data-aos="flip-down">
-                <a href="img/2.png" data-toggle="lightbox">
-                  <div class="img-zoom">
-                    <img src="img/2.png" class="card-img-top">
-                  </div>
-                </a>
-                <div class="card-body">
-                  <h5 class="card-title">Kaell Store</h5>
-                  <p class="card-text">Simple e-commerce website, made with HTML, CSS, and Bootstrap 4.</p>
-                  <a href="https://ketoprac.github.io/kaell" class="btn btn-primary btn-block">View Project</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="card" data-aos="flip-down">
-                <a href="img/3.png" data-toggle="lightbox">
-                  <div class="img-zoom">
-                    <img src="img/3.png" class="card-img-top">
-                  </div>
-                </a>
-                <div class="card-body">
-                  <h5 class="card-title">Arunika</h5>
-                  <p class="card-text">My group project on college. Made with Bootstrap 4, and a few JavaScript
-                    Libraries.</p>
-                  <a href="https://ketoprac.github.io/arunika" class="btn btn-primary btn-block">View Project</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Education -->
-  <section id="education">
-    <div class="bottom-right-gradient"></div>
-    <div class="row">
-      <div class="col">
-        <h1 class="display-4 text-center" data-aos="fade-up" data-aos-duration="1500">Education</h1>
-        <div class="row">
-          <div class="container">
-            <div class="col" data-aos="fade-right" data-aos-duration="1500">
-              <h1 class="edu">Bina Sarana Informatika University</h1>
-              <h2>Major in Information Systems</h2>
-              <h2>2019 - Now</h2>
-              <hr>
-              <h1 class="edu">SMK Negeri 3 Depok</h1>
-              <h2>Major in Computer and Network Engineering</h2>
-              <h2>2015 - 2018</h2>
-              <hr>
-              <h1 class="edu">SMP Negeri 4 Depok</h1>
-              <h2>2012 - 2015</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Us -->
-  <section id="contact">
-    <div class="bottom-left-gradient"></div>
-    <div class="row">
-      <div class="col">
-        <h1 class="display-4 text-center" data-aos="fade-up" data-aos-duration="1500">Contact Me</h1>
+    <!-- Navbar -->
+    <section id="intro">
+      <!-- <div class="top-right-gradient"></div> -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
         <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-3" data-aos="zoom-in">
-              <h2 class="mb-3">Find me on :</h2>
-              <a href="https://twitter.com/hafiedzmada"><button type="button" class="btn btn-primary btn-lg"> <i
-                    class="fab fa-twitter"></i> @hafiedzmada</button></a>
-              <a href="https://instagram.com/hafiedzmada"><button type="button" class="btn btn-primary btn-lg"> <i
-                    class="fab fa-instagram"></i> @hafiedzmada</button></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" href="#">Home</a>
+              <a class="nav-link active" href="#portfolio">Portfolio</a>
+              <a class="nav-link active" href="#education">Education</a>
             </div>
-            <div class="col-lg-1">
-              <div class="vl"></div>
+            <div class="navbar-nav ml-auto">
+              <a href="#contact"
+                ><button type="button" class="btn btn-primary">
+                  Contact
+                </button></a
+              >
             </div>
-            <div class="col-lg-7" data-aos="zoom-in">
-              <h2>Send me a message :</h2>
-              <form>
-                <div class="form-group">
-                  <label for="nama">Name</label>
-                  <input type="text" class="form-control" id="name">
+          </div>
+        </div>
+      </nav>
+
+      <!-- Jumbotron -->
+
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <p class="lead">Hello, i am</p>
+          <h1 class="display-5">Hafiedz Mada Matsushita</h1>
+          <p class="lead">
+            Hello, I’m Mada. I’m a Front-End Developer with some <br />
+            experience working with HTML, CSS, JavaScript, React, <br />and
+            NextJS to deliver exceptional customer experiences.<br />
+            Looking for an opportunity to develop my potential<br />
+            as a Front-End Developer.
+          </p>
+          <img src="img/programmer.png" alt="Programmer" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio">
+      <!-- <div class="middle-left-gradient"></div> -->
+      <div class="container pb-5">
+        <div class="row">
+          <div class="col">
+            <h1
+              class="display-4 text-center"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
+              Portfolio
+            </h1>
+            <div class="row content-portfolio justify-content-center">
+              <div class="col-lg-6">
+                <div class="card" data-aos="flip-down">
+                  <a href="img/7.png" data-toggle="lightbox">
+                    <div class="img-zoom">
+                      <img src="img/7.png" class="card-img-top" />
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title">LingoParent</h5>
+                    <p class="card-text">
+                      During internship program in Glints Academy x Kampus Merdeka. I contributed building some pages in LingoParent project such as Course Page, Enrollment Page, Navbar, Footer, etc. 
+                    </p>
+                    <a
+                      href="#"
+                      class="btn btn-primary btn-block"
+                      >View Project</a
+                    >
+                  </div>
                 </div>
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="text" class="form-control" id="email">
+              </div>
+              <div class="col-lg-6">
+                <div class="card" data-aos="flip-down">
+                  <a href="img/4.png" data-toggle="lightbox">
+                    <div class="img-zoom">
+                      <img src="img/4.png" class="card-img-top" />
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title">StoreGG</h5>
+                    <p class="card-text">
+                      Gaming Top Up Website made from NextJS, Express, NodeJS,
+                      MongoDB. Project that i build from online course.
+                    </p>
+                    <a
+                      href="https://storegg-sample.vercel.app/"
+                      class="btn btn-primary btn-block"
+                      >View Project</a
+                    >
+                  </div>
                 </div>
-                <div class="form-group">
-                  <label for="telp">Phone Number</label>
-                  <input type="text" class="form-control" id="telp">
+              </div>
+              <div class="col-lg-6">
+                <div class="card" data-aos="flip-down">
+                  <a href="img/3.png" data-toggle="lightbox">
+                    <div class="img-zoom">
+                      <img src="img/3.png" class="card-img-top" />
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title">Arunika</h5>
+                    <p class="card-text">
+                      My group project on college. Made with Bootstrap 4, and a
+                      few JavaScript Libraries.
+                    </p>
+                    <a
+                      href="https://ketoprac.github.io/arunika"
+                      class="btn btn-primary btn-block"
+                      >View Project</a
+                    >
+                  </div>
                 </div>
-                <div class="form-group">
-                  <label for="pesan">Message</label>
-                  <textarea name="pesan" id="message" class="form-control"></textarea>
+              </div>
+              <div class="col-lg-6">
+                <div class="card" data-aos="flip-down">
+                  <a href="img/5.png" data-toggle="lightbox">
+                    <div class="img-zoom">
+                      <img src="img/5.png" class="card-img-top" />
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title">Emoji App</h5>
+                    <p class="card-text">
+                      Emoji App with React and OpenEmoji API
+                    </p>
+                    <a
+                      href="https://optimistic-brown-ab4a0b.netlify.app/"
+                      class="btn btn-primary btn-block"
+                      >View Project</a
+                    >
+                  </div>
                 </div>
-                <div class="form-group">
-                  <button type="button" class="btn btn-info btn-block">Send Message</button>
+              </div>
+              <div class="col-lg-6">
+                <div class="card" data-aos="flip-down">
+                  <a href="img/6.png" data-toggle="lightbox">
+                    <div class="img-zoom">
+                      <img src="img/6.png" class="card-img-top" />
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title">Movie App</h5>
+                    <p class="card-text">
+                      Movie App With React and TheMovieDB API.
+                    </p>
+                    <a
+                      href="https://ecstatic-chandrasekhar-46828f.netlify.app/"
+                      class="btn btn-primary btn-block"
+                      >View Project</a
+                    >
+                  </div>
                 </div>
-              </form>
+              </div>
+
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
+    <!-- Education -->
+    <section id="education">
+      <!-- <div class="bottom-right-gradient"></div> -->
       <div class="row">
         <div class="col">
-          <p>Copyright &copy; 2020.</p>
+          <h1
+            class="display-4 text-center"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            Education
+          </h1>
+          <div class="row">
+            <div class="container">
+              <div class="col" data-aos="fade-right" data-aos-duration="1500">
+                <h2 class="edu">Bina Sarana Informatika University</h2>
+                <h3>Major in Information Systems</h3>
+                <h3>2019 - Now</h3>
+                <hr />
+                <h2 class="edu">SMK Negeri 3 Depok</h2>
+                <h3>Major in Computer and Network Engineering</h3>
+                <h3>2015 - 2018</h3>
+                <hr />
+                <h2 class="edu">SMP Negeri 4 Depok</h2>
+                <h3>2012 - 2015</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <h1
+            class="display-4 text-center"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            Experience
+          </h1>
+          <div class="row">
+            <div class="container">
+              <div class="col" data-aos="fade-right" data-aos-duration="1500">
+                <h2 class="edu">Glints Academy x Kampus Merdeka</h2>
+                <h4>Front End (Industry Project Exploration)</h4>
+                <h4>August 2021 - February 2022</h4>
+                <p>
+                  Collaborating with peers to build few mini projects such as to
+                  do list and worker attendance app. Contributing in
+                  LingoParents project, building course and enrollment page and
+                  integrating to the backend.
+                </p>
+                <hr />
+                <h2 class="edu">Kamar Pelajar</h2>
+                <h4>Front End</h4>
+                <h4>January 2021- April 2021</h4>
+                <p>
+                  Implementing visual elements to build a friendly website
+                  application, and collaborating Back-End Developer to deliver
+                  best experience
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <!-- Optional JavaScript; choose one of the two! -->
+    </section>
 
-  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-    crossorigin="anonymous"></script>
+    <!-- Contact Us -->
+    <section id="contact">
+      <!-- <div class="bottom-left-gradient"></div> -->
+      <div class="row">
+        <div class="col">
+          <h1
+            class="display-4 text-center"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            Contact Me
+          </h1>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-3" data-aos="zoom-in">
+                <h2 class="mb-3">Find me on :</h2>
+                <a href="https://www.linkedin.com/in/hafiedzmada/"
+                  ><button type="button" class="btn btn-primary btn-lg">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn
+                  </button></a
+                >
+                <a href="https://github.com/ketoprac/"
+                  ><button type="button" class="btn btn-primary btn-lg">
+                    <i class="fa-brands fa-github"></i> Github
+                  </button></a
+                >
+                <a href="https://twitter.com/hafiedzmada"
+                  ><button type="button" class="btn btn-primary btn-lg">
+                    <i class="fab fa-twitter"></i> Twitter
+                  </button></a
+                >
+              </div>
+              <div class="col-lg-1">
+                <div class="vl"></div>
+              </div>
+              <div class="col-lg-7" data-aos="zoom-in">
+                <h2>Send me a message :</h2>
+                <form>
+                  <div class="form-group">
+                    <label for="nama">Name</label>
+                    <input type="text" class="form-control" id="name" />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control" id="email" />
+                  </div>
+                  <div class="form-group">
+                    <label for="telp">Phone Number</label>
+                    <input type="text" class="form-control" id="telp" />
+                  </div>
+                  <div class="form-group">
+                    <label for="pesan">Message</label>
+                    <textarea
+                      name="pesan"
+                      id="message"
+                      class="form-control"
+                    ></textarea>
+                  </div>
+                  <div class="form-group">
+                    <button type="button" class="btn btn-info btn-block">
+                      Send Message
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- My Script -->
-  <script src="main.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"
-    integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g=="
-    crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-  <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p>Copyright &copy; 2022</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- My Script -->
+    <script src="main.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"
+      integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
     -->
-</body>
-
+  </body>
 </html>

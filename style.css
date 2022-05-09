@@ -37,7 +37,7 @@ nav .btn {
 .jumbotron {
     color: #fff;
     background-color: #2d6187;
-    height: 93vh;
+    min-height: 120vh;
 }
 
 .jumbotron h1 {
@@ -109,9 +109,10 @@ nav .btn {
 /* Education */
 #education {
     color: #2d6187;
+    padding: 64px;
     /* margin-top: -30px; */
     background-color: #a8dda8;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 #education .row {
@@ -138,7 +139,7 @@ nav .btn {
     color: #effad3;
     /* margin-top: -30px; */
     background-color: #28abb9;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 #contact h1.display-4 {
@@ -200,6 +201,13 @@ nav .btn {
   background-position: right center; /* Add a dark-grey background on hover */
 }
 
+@media (max-width: 1024px) {
+  .jumbotron img {
+    height: 1px;
+}
+}
+
+
 /* Responsiveness */
 @media (min-width: 320px) and (max-width: 640px) {
     /* Navbar */
@@ -214,8 +222,11 @@ nav .btn {
     }
 
     .jumbotron img {
-        margin-top: 30px;
-        width: 450px;
+        height: 1px;
+    }
+
+    .jumbotron > .container {
+      margin-bottom: 200px;
     }
 
     #intro .top-right-gradient {
@@ -239,9 +250,9 @@ nav .btn {
     }
 
     /* Education */
-    /* #education {
-      height: 120vh;
-    } */
+    #education {
+      min-height: 100vh !important;
+    }
 
     #education .bottom-right-gradient {
       position: absolute;
