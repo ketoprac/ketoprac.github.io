@@ -7,11 +7,11 @@ const App = () => {
       <nav>
         <h1>Portfolio</h1>
         <ul>
-          <li>Home</li>
-          <li>About Me</li>
-          <li>Services</li>
-          <li>Projects</li>
-          <li>Contact</li>
+          <li><a className="animate" href="#">Home</a></li>
+          <li><a className="animate" href="#profile">About Me</a></li>
+          <li><a className="animate" href="#skills">Services</a></li>
+          <li><a className="animate" href="#portfolio">Projects</a></li>
+          <li><a className="animate" href="#">Contact</a></li>
         </ul>
       </nav>
 
@@ -24,14 +24,14 @@ const App = () => {
             Hello, my name is <span className="name">Hafiedz Mada Matsushita</span>
           </h1>
           <p>
-            A passionate <span className="highlight">Frontend Developer</span> with nearly a year of
+            A passionate <span className="highlight">Frontend Developer</span> with a year of
             experience using <span className="highlight">JavaScript, HTML, and CSS</span> to build all aspects of
             the user experience and user interface for client-facing landing
-            pages. Specializes in using React to build user interface. <span className="highlight">During
-            college, I took internships in Kamar Pelajar and Glints Academy x
-            Kampus Merdeka as a Front End Developer, I obtained a lot of
+            pages. Specializes in using React to build user interface. During
+            college, I took internships in <span className="highlight">Kamar Pelajar</span> and <span className="highlight">Glints Academy x
+            Kampus Merdeka</span> as a Front End Developer, I obtained a lot of
             experience during the internship and presently I am looking for an
-            opportunity to develop my career.</span>
+            opportunity to develop my career.
           </p>
         </section>
       </div>
@@ -39,6 +39,12 @@ const App = () => {
       <div id="experiences" className="section">
         <section>
           <h1 className="title">Education</h1>
+          <h2>CODE.ID</h2>
+          <div className="orange-line">
+          </div>
+          <p>Fullstack Javascript Bootcamp</p>
+          <p>September 2022 - December 2022</p>
+          <br />
           <h2>Universitas Bina Sarana Informatika</h2>
           <div className="orange-line">
           </div>
@@ -88,13 +94,20 @@ const App = () => {
         </section>
       </div>
 
+      <div id="skills">
+        <h1 className="title">Skills</h1>
+        <section>
+          {/* <img */}
+        </section>
+      </div>
+
       <div id="portfolio" className="section">
-        <h1>Projects</h1>
+        <h1 className="title">What I've Built</h1>
         <section>
           {projects.map((project) => (
             <div key={project.id} className="card">
-              <img src={`./` + project.img} alt="project preview" />
               <div>
+              <img src={`./` + project.img} alt="project preview" />
                 <h3>{project.title}</h3>
                 <p>{project.desc}</p>
               </div>
