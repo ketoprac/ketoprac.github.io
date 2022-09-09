@@ -25,11 +25,12 @@ nav > h1 {
   cursor: pointer;
   font-size: 2rem;
   transition: 0.3s;
+  letter-spacing: 1px;
 }
 
 nav > h1:hover {
   color: darkorange;
-  transform: scale(1.1);
+  letter-spacing: 0;
 }
 
 nav > ul {
@@ -51,6 +52,10 @@ nav > ul > li {
   color: #FFFFFF;
 }
 
+.section {
+  width: 100%;
+}
+
 .animate::after {
   display: block;
   content: '';
@@ -66,6 +71,14 @@ nav > ul > li {
 
 .title {
   font-size: 5rem;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.title:hover {
+  letter-spacing: 0;
+  color: darkorange;
 }
 
 #profile {
@@ -90,7 +103,7 @@ nav > ul > li {
 }
 
 #profile > section > img:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 #profile > section > p {
@@ -101,6 +114,8 @@ nav > ul > li {
   color: darkorange;
   font-weight: 800;
   font-size: 3rem;
+  letter-spacing: 0;
+  transition: 0.3s;
 }
 
 .highlight {
@@ -128,54 +143,75 @@ nav > ul > li {
   min-height: 100vh;
   background: #151515;
   color: #FFFFFF;
+  text-align: center;
+  padding-top: 64px;
 }
 
 #portfolio {
-  background: #3C415C;
+  background: #301B3F;
   color: #EEF2E6;
   min-height: 100vh;
+  padding-top: 64px;
 } 
+
+#portfolio > h1 {
+  text-align: center;
+  margin-bottom: 24px;
+}
 
 #portfolio > section {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 16px;
-  padding-bottom: 60px;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  padding: 32px 32px 60px 32px;
 }
 
 .card {
   display: flex;
-  flex-direction: column;
   gap: 8px;
   justify-content: space-between;
-  align-items: center;
   background: #151515;
   color: #FFFFFF;
-  border-radius: 8px;
-  padding: 16px;
+  border-radius: 4px;
+  padding: 64px 32px;
   overflow: hidden;
-  width: 240px;
-  min-height: 400px;
+  width: 960px;
+  border-left: 8px solid #970cfa;
+  gap: 48px;
+  box-shadow: rgb(151, 12, 250, 0.4) 5px 5px, rgb(151, 12, 250, 0.3) 10px 10px, rgb(151, 12, 250, 0.2) 15px 15px, rgb(151, 12, 250, 0.1) 20px 20px, rgb(151, 12, 250, 0.05) 25px 25px;
+  transition: 0.3s;
 }
 
-.card > div > img {
-  width: 240px;
-  border: 1px solid whitesmoke;
+.card:hover {
+  padding: 54px 32px;
 }
 
-.card > button {
+.card > img {
+  width: 480px;
+  box-shadow: rgb(151, 12, 250, 0.4) 5px 5px, rgb(151, 12, 250, 0.3) 10px 10px, rgb(151, 12, 250, 0.2) 15px 15px, rgb(151, 12, 250, 0.1) 20px 20px, rgb(151, 12, 250, 0.05) 25px 25px;
+
+}
+
+.card > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4px;
+}
+
+.card > div > button {
   padding: 8px; 
   border: none;
   cursor: pointer;
   background: none;
   font-weight: 700;
-  color: #970cfa;
+  color: #fff;
   border: 2px solid #970cfa;
   border-radius: 4px;
 }
 
-.card > button:hover {
+.card > div > button:hover {
   color: #151515;
   background: #970cfa;
   border: 2px solid #151515;
