@@ -98,7 +98,7 @@ nav > ul > li {
   width: 300px;
   border-radius: 50%;
   border: 5px solid #970cfa;
-  padding: 2px;
+  padding: 4px;
   transition: 0.3s;
 }
 
@@ -144,7 +144,28 @@ nav > ul > li {
   background: #151515;
   color: #FFFFFF;
   text-align: center;
-  padding-top: 64px;
+  padding: 64px;
+}
+
+#skills > section {
+  margin-top: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+
+#skills > section > a {
+  flex: 1 0 calc(13% - 16px);
+}
+
+#skills > section > a > img {
+  transition: 0.3s;
+  width: 160px;
+}
+
+#skills > section > a > img:hover {
+  transform: scale(1.3);
 }
 
 #portfolio {
@@ -174,23 +195,28 @@ nav > ul > li {
   background: #151515;
   color: #FFFFFF;
   border-radius: 4px;
-  padding: 64px 32px;
+  padding: 54px 32px;
   overflow: hidden;
   width: 960px;
   border-left: 8px solid #970cfa;
   gap: 48px;
-  box-shadow: rgb(151, 12, 250, 0.4) 5px 5px, rgb(151, 12, 250, 0.3) 10px 10px, rgb(151, 12, 250, 0.2) 15px 15px, rgb(151, 12, 250, 0.1) 20px 20px, rgb(151, 12, 250, 0.05) 25px 25px;
   transition: 0.3s;
+  min-height: 350px;
+  box-shadow: rgb(151, 12, 250, 0.4) 0 0, rgb(151, 12, 250, 0.3) 5px 5px, rgb(151, 12, 250, 0.2) 10px 10px, rgb(151, 12, 250, 0.1) 15px 15px, rgb(151, 12, 250, 0.05) 20px 20px;
 }
 
 .card:hover {
-  padding: 54px 32px;
+  box-shadow: rgb(151, 12, 250, 0.4) 5px 5px, rgb(151, 12, 250, 0.3) 10px 10px, rgb(151, 12, 250, 0.2) 15px 15px, rgb(151, 12, 250, 0.1) 20px 20px, rgb(151, 12, 250, 0.05) 25px 25px;
 }
 
 .card > img {
   width: 480px;
   box-shadow: rgb(151, 12, 250, 0.4) 5px 5px, rgb(151, 12, 250, 0.3) 10px 10px, rgb(151, 12, 250, 0.2) 15px 15px, rgb(151, 12, 250, 0.1) 20px 20px, rgb(151, 12, 250, 0.05) 25px 25px;
+  transition: 0.3s;
+}
 
+.card > img:hover {
+  transform: scale(1.04);
 }
 
 .card > div {
@@ -212,10 +238,17 @@ nav > ul > li {
 }
 
 .card > div > button:hover {
-  color: #151515;
   background: #970cfa;
-  border: 2px solid #151515;
   transition: 0.5s ease;
+}
+
+.project-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.project-desc {
+  margin-top: 16px;
 }
 
 footer {
@@ -224,4 +257,20 @@ footer {
   padding: 16px;
   background: #151515;
   color: #FFFFFF;
+}
+
+.social-section {
+  margin-top: 16px;
+}
+
+.social-link > i{
+  transition: 250ms;
+  color: white;
+  margin-right: 16px;
+  font-size: 2em;
+}
+
+.social-link > i:hover {
+  color: darkorange;
+  transform: translateY(-10px);
 }
