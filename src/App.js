@@ -18,6 +18,11 @@ const App = () => {
             </a>
           </li>
           <li>
+            <a className="animate" href="#experiences">
+              Experiences
+            </a>
+          </li>
+          <li>
             <a className="animate" href="#skills">
               Services
             </a>
@@ -80,11 +85,6 @@ const App = () => {
         </section>
         <section>
           <h1 className="title">Experiences</h1>
-          <h2>CODE.ID</h2>
-          <div className="orange-line"></div>
-          <p>Fullstack Developer</p>
-          <p>September 2022 - Present</p>
-          <br />
           <h2>Glints Academy x Kampus Merdeka</h2>
           <div className="orange-line"></div>
           <p>Frontend Developer Intern</p>

@@ -274,3 +274,83 @@ footer {
   color: darkorange;
   transform: translateY(-10px);
 }
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  #profile {
+    flex-direction: column;
+  }
+
+  #profile > section > h1 {
+    text-align: center;
+  }
+
+  #profile > section > p {
+    font-size: 1.3rem;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .social-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .social-section > a {
+    font-size: 1.5rem;
+  }
+
+  #experiences {
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 32px;
+    padding: 32px;
+  }
+
+  #experiences > section {
+    margin-bottom: 16px;
+  }
+
+  #experiences > section > h2 {
+    font-size: 2rem;
+  }
+
+  #experiences > section > h2 {
+    font-size: 1.5rem;
+  }
+
+  .title {
+    font-size: 3.5rem;
+  }
+
+  #skills > section > a > img {
+    transition: 0.3s;
+    width: 120px;
+  }
+
+  #portfolio > section {
+    gap: 16px;
+  }
+
+  .card {
+    flex-direction: column;
+    width: 360px;
+    margin-bottom: 16px;
+  }
+
+  .card > img {
+    width: 300px;
+  }
+
+  .card > div > button {
+    margin-top: 16px;
+  }
+}
